@@ -1,11 +1,5 @@
-import express from "express";
-
-const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Test");
-});
+import app from "./app.js";
 
 app.listen(3000, () => {
-  console.log("Server levantado en puerto 3000");
+  console.log("Servidor levantado en local host 3000");
 });
